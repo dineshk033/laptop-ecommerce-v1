@@ -1,0 +1,29 @@
+<div class="p-mx-4 p-my-2 p-grid">
+    <div class="p-col-3">
+        <cus-laptop-filter></cus-laptop-filter>
+    </div>
+    <div class="p-col-9 p-pl-3">
+        <div class="p-mb-3 p-d-flex p-jc-between p-ai-center">
+            <p-dropdown [options]="sortByOption" [(ngModel)]="sortBy" optionLabel="name"></p-dropdown>
+            <div>
+                <span class="material-icons" style="font-size:2rem;cursor: pointer;"
+                    (click)="gridToggle=true">list</span>
+                <span class="material-icons" style="font-size:2rem;cursor: pointer;"
+                    (click)="gridToggle=false">view_module</span>
+            </div>
+        </div>
+        <div *ngFor="let product of products">
+            <ng-template [ngIf]="gridToggle" [ngIfElse]="listGrid">
+                <card-view-three [productDetail]="product"></card-view-three>
+            </ng-template>
+            <ng-template #listGrid>
+                <div class="p-grid p-mb-4 p-pb-3">
+                     <!-- style="border-bottom:1.5px solid var(--surface-d)" -->
+                    <div *ngFor="let product of products" class="p-col-3">
+                        <customer-card-one [productDetail]="product"></customer-card-one>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

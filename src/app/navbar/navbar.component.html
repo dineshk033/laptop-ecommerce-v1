@@ -1,0 +1,37 @@
+<div class="p-fluid p-grid p-nogutter p-ai-center nav-toolbar" >
+    <div class="nav-title p-md-3" (click)='display=true'>
+        <span class="material-icons" >
+            menu
+        </span>
+        <span class="logo-title">
+            Vishwa Group of Company
+        </span>
+    </div>
+    <div class="p-md-5">
+        <auto-complete-search></auto-complete-search>
+    </div>
+    <div class="p-md-4 p-d-flex p-jc-end" >
+        <div class="p-px-3">
+            <span class="material-icons-outlined">
+                account_circle
+            </span>
+            <span>
+                Account
+            </span>
+        </div>
+        <div class="p-px-3">
+            <span class="p-overlay-badge ">
+                <span>
+                    Cart
+                </span>
+                <span class="material-icons-outlined">
+                    shopping_cart
+                </span>
+                <span class="p-badge p-badge-warning">2</span>
+            </span>
+        </div>
+    </div>
+</div>
+<p-megaMenu [model]="items"></p-megaMenu>
+<app-sidebar [display]="display" (closeDisplay)="display=$event"></app-sidebar>
+ 
