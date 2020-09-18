@@ -27,6 +27,12 @@ import {StepsModule} from 'primeng/steps';
 import {PasswordModule} from 'primeng/password';
 import {GalleriaModule} from 'primeng/galleria';
 import {TabViewModule} from 'primeng/tabview';
+import {MenubarModule} from 'primeng/menubar';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import {InputNumberModule} from 'primeng/inputnumber';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {DataViewModule} from 'primeng/dataview';
 
 @NgModule({
   exports: [
@@ -56,7 +62,13 @@ import {TabViewModule} from 'primeng/tabview';
     StepsModule,
     PasswordModule,
     GalleriaModule,
-    TabViewModule
+    TabViewModule,
+    MenubarModule,
+    MessageModule,
+    MessagesModule,
+    InputNumberModule,
+    ScrollPanelModule,
+    DataViewModule
   ]
 })
 export class PrimengCustomModule { }

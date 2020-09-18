@@ -1,6 +1,8 @@
 .card{
     background-color: #ffffff;
-    //  width:200px;
+    //  width:300px;
+    // width: 100%;
+    margin: 1rem;
     border-radius: 15px;
     // border:1px solid var(--surface-d)
 }
@@ -71,7 +73,7 @@
     cursor: pointer;
 }
 
-.btn {
+.btn-ic {
     background-color: orange;    
     border: none;
     border-top: 2px solid white;
@@ -87,6 +89,7 @@
     right: 10px;
 }
 
-.btn:hover {
+.btn-ic:hover {
     background: var(--primary-ccolor);
 }
+

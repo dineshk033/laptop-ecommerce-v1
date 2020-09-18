@@ -7,8 +7,7 @@ import { WebSignUpComponent } from './web-sign-up/web-sign-up.component';
 const routes: Routes = [
   {path:'login', component:WebLoginComponent},
   {path:'signup',component:WebSignUpComponent},
-  { path:'',redirectTo:'customers', pathMatch: 'full'},
-  { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }];
+  { path: '', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],

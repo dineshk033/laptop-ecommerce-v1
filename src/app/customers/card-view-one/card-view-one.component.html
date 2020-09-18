@@ -1,38 +1,17 @@
-<div [ngClass]="containerClass">
+<div class="card box-shadow">
     <div>
-        <img [ngClass]="imgClass" [src]="product.image" />
-        
+        <img class="card-img" [src]="product.image" />        
     </div>
     <div class="p-px-3 card-body " style="position: relative;">
         <h4 class="card-title ">{{product.name}}</h4>
-
-        <!-- Dell Vostro Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) -->
-        <!-- <div class="p-grid ">
-            <div class="card-subTitle p-col-6"> 
-                <span class="material-icons-outlined">memory</span>
-                <span> i5 10th Gen</span>
-            </div>
-            <div class="card-subTitle p-col-6">
-                <img src="assets/ram.png" style="width:20px"/>
-                <span> 4GB</span>
-            </div>
-            <div class="card-subTitle p-col-6"> 
-                <span class="material-icons-outlined">tv</span>
-                <span> 14 inch </span>
-            </div>
-            <div class="card-subTitle p-col-6">
-                <span class="material-icons-outlined">sd_storage</span>
-                <span> 1 TB</span>
-            </div>
-        </div> -->
-        <div class="p-d-flex p-ai-center p-jc-between">
+  <div class="p-d-flex p-ai-center p-jc-between">
             <h4 class="card-price">
                 {{product.offerPrice|currency:'INR'}}
                 <span class="price-strike">{{product.price|currency:'INR'}}</span>
 
             </h4>
             <div style="position: absolute;right:0;top:0">
-                <span class="btn material-icons-outlined"
+                <span class="btn-ic material-icons-outlined"
                     style="font-size: 0.8rem;color: white;vertical-align: middle;">add_shopping_cart</span>
             </div>
         </div>

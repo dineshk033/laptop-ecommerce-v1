@@ -20,10 +20,13 @@ import { CustomerRequestTrackComponent } from './customer-request-track/customer
 import { CustomerProductDetailComponent } from './customer-product-detail/customer-product-detail.component';
 import { ProductImageViewComponent } from './product-image-view/product-image-view.component';
 import { ProductTabDescComponent } from './product-tab-desc/product-tab-desc.component';
+import { ProductCartComponent } from './product-cart/product-cart.component';
+import { CartStepOneComponent } from './cart-step-one/cart-step-one.component';
+import { CartCardViewComponent } from './cart-card-view/cart-card-view.component';
 
 
 @NgModule({
-  declarations: [CustomersComponent, DashboardCustomerComponent, CardViewOneComponent, PopularProductComponent, CardViewTwoComponent, LaptopFilterComponent, CardViewThreeComponent, CustomerProductComponent, CustomerAmcComponent, CustomerSidebarComponent, CusCallRequestComponent, CustomerAmcInfoComponent, CustomerRequestTrackComponent, CustomerProductDetailComponent, ProductImageViewComponent, ProductTabDescComponent],
+  declarations: [CustomersComponent, DashboardCustomerComponent, CardViewOneComponent, PopularProductComponent, CardViewTwoComponent, LaptopFilterComponent, CardViewThreeComponent, CustomerProductComponent, CustomerAmcComponent, CustomerSidebarComponent, CusCallRequestComponent, CustomerAmcInfoComponent, CustomerRequestTrackComponent, CustomerProductDetailComponent, ProductImageViewComponent, ProductTabDescComponent, ProductCartComponent, CartStepOneComponent, CartCardViewComponent],
   imports: [
     CommonModule,
     FormsModule,
